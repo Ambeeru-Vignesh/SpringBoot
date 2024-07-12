@@ -9,7 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class IntroductionToSpringBootApplication implements CommandLineRunner {
 
 	@Autowired
-	Apple obj;
+	Apple apple1;
+
+	@Autowired
+	Apple apple2;
 
 	public static void main(String[] args) {
 
@@ -19,6 +22,7 @@ public class IntroductionToSpringBootApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		obj.eatApple();
+		apple1.eatApple();
+		apple2.eatApple();
 	}
 }
