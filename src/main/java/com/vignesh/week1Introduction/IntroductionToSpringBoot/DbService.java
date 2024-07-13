@@ -7,8 +7,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class DbService {
 
-    @Autowired
-    DB Db;
+    final DB Db;
+
+    public DbService(DB Db) {
+        this.Db = Db;
+    }
 
     String getData() {
         return Db.getData();
